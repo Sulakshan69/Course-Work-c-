@@ -1,3 +1,12 @@
+Write a program that reads the titles of 10 books (use an array of 150 characters) and writes them in a binary file selected by the user. The program should read a title and display a message to indicate if it is contained in the file or not. 	
+Create a program that
+
+1.	Reads student records (roll, name, marks) from a text file
+2.	Throws an exception if marks are not between 0 and 100
+3.	Allows adding new records with proper validation
+4.	Saves modified records back to file
+
+
 #include <iostream>
 #include <fstream>
 #include <cstring>
