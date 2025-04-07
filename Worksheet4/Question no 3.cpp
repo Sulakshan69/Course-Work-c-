@@ -1,3 +1,11 @@
+3.	Queue Problem: Implement a queue using arrays (not STL) that:
+    
+1.	Has basic enqueue and dequeue operations
+2.	Has a function to reverse first K elements
+3.	Has a function to interleave first half with second half
+4.	Handle queue overflow/underflow
+
+
 #include <iostream>
 using namespace std;
 
