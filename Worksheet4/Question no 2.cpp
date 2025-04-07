@@ -1,3 +1,11 @@
+2.	Stack Problem: Implement a stack using arrays (not STL) that:
+    
+1.	Has basic push and pop operations
+2.	Has a function to find middle element
+3.	Has a function to reverse only bottom half of stack
+4.	Maintain stack size of 10
+
+
 #include <iostream>
 using namespace std;
 
