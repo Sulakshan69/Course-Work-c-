@@ -14,13 +14,7 @@ Worksheet 3	Object-Oriented Programming, Classes, Inheritance
 Worksheet 4	STL (Stacks, Queues, Linked Lists), Custom Data Structures
 
 
-Clean and beginner-friendly C++ code 
 
-Step-by-step solutions with inline comments
-
-Practical implementations of data structures
-
-Reusable code structure using object-oriented principles
 
 
 
