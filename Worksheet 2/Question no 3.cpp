@@ -1,4 +1,4 @@
-2.	Create a program with these overloaded functions named findMax:
+	Create a program with these overloaded functions named findMax:
 
 1.	One that finds maximum between two integers
 2.	One that finds maximum between two floating-point numbers
