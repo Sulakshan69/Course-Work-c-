@@ -1,3 +1,11 @@
+2.	Create a program with these overloaded functions named findMax:
+
+1.	One that finds maximum between two integers
+2.	One that finds maximum between two floating-point numbers
+3.	One that finds maximum among three integers
+4.	One that finds maximum between an integer and a float	
+
+
 #include <iostream>
 using namespace std;
 
