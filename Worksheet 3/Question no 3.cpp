@@ -1,4 +1,4 @@
-	Create a program that:
+Create a program that:
     
 1.	Reads student records (roll, name, marks) from a text file
 2.	Throws an exception if marks are not between 0 and 100
