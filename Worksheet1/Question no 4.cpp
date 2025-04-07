@@ -1,3 +1,5 @@
+4.Write a program that reads a number from the user and based on the user input, it says what day of the week it is, Sundays being 1 and Saturdays being 7. You system should give appropriate response for invalid input entries
+
 
 #include <iostream>
 using namespace std;
