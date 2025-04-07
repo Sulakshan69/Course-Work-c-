@@ -1,3 +1,16 @@
+1. Write a program that manages a cinema ticket booking system. The program should display a 5x5 seating arrangement where: 
+1.	Available seats are marked with 'O'
+2.	Booked seats are marked with 'X'
+    
+Program should: 
+1.	Display the current seating arrangement
+2.	Ask user for row and column number (1-5) for booking
+3.	Mark that seat as booked ('X')
+4.	Show updated seating after each booking
+5.	Display error if user selects already booked seat
+6.	Display error if user enters invalid row/column numbers
+
+
 #include <iostream>
 using namespace std;
 
