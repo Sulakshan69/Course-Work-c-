@@ -1,4 +1,4 @@
-3.	Write a program that reads an array of integer numbers from the user and sorts the numbers in the ascending order. 
+3.Write a program that reads an array of integer numbers from the user and sorts the numbers in the ascending order. 
 
 
 #include <iostream>
