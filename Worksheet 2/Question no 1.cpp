@@ -1,3 +1,15 @@
+Write a program that manages a simple student grade calculator with the following requirements. Create a Student class that has: 
+1.	Student name (string)
+2.	Three subject marks (integers)
+3.	A basic member function to calculate average
+
+The program should: 
+1.	Accept student details (name and marks) from user input
+2.	Calculate and display: 
+1.	Total marks
+2.	Average marks
+3.	Grade (A for ≥90%, B for ≥80%, C for ≥70%, D for ≥60%, F for <60%)
+3.	Display a message if any mark is below 0 or above 100
 
 
 
