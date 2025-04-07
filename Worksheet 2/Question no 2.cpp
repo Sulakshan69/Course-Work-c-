@@ -1,3 +1,10 @@
+1.	Write a program with a class Circle having:
+
+1.	Private member: radius (float)
+2.	A constructor to initialize radius
+3.	A friend function compareTwoCircles that takes two Circle objects and prints which circle has the larger area
+
+
 #include <iostream>
 #include <cmath>
 using namespace std;
