@@ -1,4 +1,4 @@
-2.	Stack Problem: Implement a stack using arrays (not STL) that:
+2.Stack Problem: Implement a stack using arrays (not STL) that:
     
 1.	Has basic push and pop operations
 2.	Has a function to find middle element
