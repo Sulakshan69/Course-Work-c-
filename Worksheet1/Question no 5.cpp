@@ -1,3 +1,9 @@
+1. Create a program that takes a positive integer as input and determines whether it's a "bouncy number". A bouncy number is one where the digits neither consistently increase nor consistently decrease when read from left to right. For example:
+•	123 is NOT bouncy (digits consistently increase)
+•	321 is NOT bouncy (digits consistently decrease)
+•	120 is bouncy (neither consistently increasing nor decreasing)
+
+
 #include <iostream>
 using namespace std;
 
