@@ -1,8 +1,5 @@
-2.	 Write a C++ program to implement a number guessing game with different difficulty levels.
+2. Write a C++ program to implement a number guessing game with different difficulty levels.
 Easy difficulty ranges from 1-8, medium from 1-30, hard from 1-50.Then,generate a random number to check if the guess is correct based on the user's selection. 
-
-
-
 
 #include <iostream>
 #include <cstdlib>
