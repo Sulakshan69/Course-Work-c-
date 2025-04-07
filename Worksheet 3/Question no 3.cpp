@@ -1,3 +1,11 @@
+	Create a program that:
+    
+1.	Reads student records (roll, name, marks) from a text file
+2.	Throws an exception if marks are not between 0 and 100
+3.	Allows adding new records with proper validation
+4.	Saves modified records back to file
+
+
 #include <iostream>
 #include <fstream>
 #include <vector>
