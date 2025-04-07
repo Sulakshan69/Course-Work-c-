@@ -1,65 +1,61 @@
 #include <iostream>
+#include <fstream>
+#include <vector>
 using namespace std;
 
-class MaxFinder {
+class InvalidMarksException {};
+
+class Student {
 public:
-    // Finds max between two integers
-    int findMax(int a, int b) {
-        return (a > b) ? a : b;
+    int roll;
+    string name;
+    float marks;
+
+    Student(int r, string n, float m) {
+        if (m < 0 || m > 100) throw InvalidMarksException();
+        roll = r;
+        name = n;
+        marks = m;
     }
 
-    // Finds max between two floats
-    float findMax(float a, float b) {
-        return (a > b) ? a : b;
+    void writeToFile(ofstream &file) {
+        file << roll << " " << name << " " << marks << endl;
     }
 
-    // Finds max among three integers
-    int findMax(int a, int b, int c) {
-        return (a > b && a > c) ? a : (b > c ? b : c);
-    }
-
-    // Finds max between an integer and a float
-    float findMax(int a, float b) {
-        return (a > b) ? a : b;
+    static void readFromFile() {
+        ifstream file("students.txt");
+        int r;
+        string n;
+        float m;
+        cout << "Student Records:\n";
+        while (file >> r >> n >> m)
+            cout << "Roll: " << r << ", Name: " << n << ", Marks: " << m << endl;
+        file.close();
     }
 };
 
 int main() {
-    MaxFinder maxFinder;
-    int choice;
+    vector<Student> students;
+    int roll;
+    string name;
+    float marks;
 
-    cout << "Choose an option to find the maximum:" << endl;
-    cout << "1. Between two integers" << endl;
-    cout << "2. Between two floating-point numbers" << endl;
-    cout << "3. Among three integers" << endl;
-    cout << "4. Between an integer and a float" << endl;
-    cout << "Enter your choice (1-4): ";
-    cin >> choice;
+    cout << "Enter new student record:\n";
+    cout << "Roll Number: "; cin >> roll;
+    cout << "Name: "; cin >> name;
+    cout << "Marks: "; cin >> marks;
 
-    if (choice == 1) {
-        int a, b;
-        cout << "Enter two integers: ";
-        cin >> a >> b;
-        cout << "Maximum: " << maxFinder.findMax(a, b) << endl;
-    } else if (choice == 2) {
-        float a, b;
-        cout << "Enter two floating-point numbers: ";
-        cin >> a >> b;
-        cout << "Maximum: " << maxFinder.findMax(a, b) << endl;
-    } else if (choice == 3) {
-        int a, b, c;
-        cout << "Enter three integers: ";
-        cin >> a >> b >> c;
-        cout << "Maximum: " << maxFinder.findMax(a, b, c) << endl;
-    } else if (choice == 4) {
-        int a;
-        float b;
-        cout << "Enter an integer and a floating-point number: ";
-        cin >> a >> b;
-        cout << "Maximum: " << maxFinder.findMax(a, b) << endl;
-    } else {
-        cout << "Invalid choice! Please restart the program and select a valid option." << endl;
+    try {
+        students.push_back(Student(roll, name, marks));
+        ofstream file("students.txt", ios::app);
+        students.back().writeToFile(file);
+        file.close();
+        cout << "Record added successfully.\n";
+    } catch (...) {
+        cout << "Invalid marks entered! Marks must be between 0 and 100.\n";
     }
 
+    Student::readFromFile();
     return 0;
 }
+
